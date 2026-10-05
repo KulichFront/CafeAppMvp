@@ -10,6 +10,7 @@ import androidx.navigation.NavHost
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.cafeappmvp.screens.AuthScreen
 import com.example.cafeappmvp.screens.InfoScreen
 
 sealed class Screen(val route: String){
@@ -26,10 +27,7 @@ fun NavGraph(){
         startDestination = Screen.CafeInfo.route
     ){
         composable(Screen.CafeInfo.route) {
-            InfoScreen(onStartClick = {
-                // Логика перехода: пока просто заглушка, позже направим на авторизацию
-                navController.navigate(Screen.Home.route)
-            })
+            AuthScreen()
         }
         composable(Screen.Home.route) {
             Box(modifier = androidx.compose.ui.Modifier.fillMaxSize(), contentAlignment = androidx.compose.ui.Alignment.Center) {

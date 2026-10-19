@@ -1,4 +1,4 @@
-package com.example.cafeappmvp.screens
+package com.example.cafeappmvp.screens.presentation
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.layout.Arrangement

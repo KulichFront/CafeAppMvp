@@ -5,13 +5,10 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.unit.sp
-import androidx.navigation.NavGraph
-import androidx.navigation.NavHost
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.cafeappmvp.screens.AuthScreen
-import com.example.cafeappmvp.screens.InfoScreen
+import com.example.cafeappmvp.screens.presentation.AuthScreen
 
 sealed class Screen(val route: String){
     object CafeInfo:Screen("cafe_info")
